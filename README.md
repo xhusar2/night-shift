@@ -1,7 +1,20 @@
-# night-shift
+<p align="center">
+  <img src="banner.png" alt="night-shift — a Claude Code utility. Work smarter. Ship after dark." width="100%">
+</p>
 
-Churn through your backlog with Claude Code while you're asleep or AFK — and hand you a
-**100% full 5-hour session window** the moment you're back.
+<p align="center">
+  <a href="https://github.com/xhusar2/night-shift/tags"><img alt="Version" src="https://img.shields.io/github/v/tag/xhusar2/night-shift?label=version&color=blueviolet"></a>
+  <img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white">
+  <img alt="Dependencies: none" src="https://img.shields.io/badge/dependencies-none-brightgreen">
+  <img alt="Platform: Linux | macOS" src="https://img.shields.io/badge/platform-linux%20%7C%20macos-lightgrey">
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-green"></a>
+  <img alt="Made for Claude Code" src="https://img.shields.io/badge/made%20for-Claude%20Code-d97757">
+</p>
+
+<p align="center"><b>Churn through your backlog with Claude Code while you're asleep or AFK —<br>
+and wake up to a 100% full 5-hour session window.</b></p>
+
+---
 
 You tell night-shift when you'll be back and how much of your weekly limit the agent may
 burn. It drains task backlogs across your repos in parallel git worktrees, opens draft PRs,
