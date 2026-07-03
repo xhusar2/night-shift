@@ -1,0 +1,36 @@
+# night-shift configuration
+# Wake times: when you are back at the keyboard. night-shift hard-stops all
+# activity at wake - 5h - margin so the 5h session window at wake is 100% full.
+
+[schedule]
+mon = "07:00"
+tue = "07:00"
+wed = "07:00"
+thu = "07:00"
+fri = "07:00"
+sat = "09:00"
+sun = "09:00"
+
+[budget]
+weekly_agent_percent = 40        # night-shift may burn at most this % of your weekly limit
+session_guard_margin_minutes = 30
+poll_interval_minutes = 5
+require_usage_api = true         # refuse to run when usage can't be read
+
+[run]
+parallel = 2                     # concurrent tasks (each in its own worktree)
+task_timeout_minutes = 90
+max_tasks_per_night = 0          # 0 = unlimited
+commit_backlog = false           # commit the BACKLOG.md check-offs to the repo
+# claude_args = ["--model", "sonnet"]
+
+[[repos]]
+path = "~/Code/myproject"
+backlog = "BACKLOG.md"           # markdown checklist: "- [ ] task"
+finish = "pr"                    # pr | branch | none
+priority = 1
+
+# [[repos]]
+# path = "~/Code/other"
+# backlog = "github:night-shift" # open GitHub issues with this label
+# finish_command = "claude -p '/no-mistakes' --dangerously-skip-permissions"

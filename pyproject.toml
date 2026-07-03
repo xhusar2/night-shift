@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "night-shift"
+version = "0.1.0"
+description = "Churn through your backlog with Claude Code while you're AFK, leaving your 5h session 100% full at wake time."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+night-shift = "night_shift.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/night_shift"]
